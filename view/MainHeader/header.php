@@ -1,10 +1,6 @@
 <header class="site-header">
     <div class="container-fluid">
 
-        <a href="#" class="site-logo">
-           <h2>HelpDesk</h2>
-        </a>
-
         <button id="show-hide-sidebar-toggle" class="show-hide-sidebar">
             <span>toggle menu</span>
         </button>
