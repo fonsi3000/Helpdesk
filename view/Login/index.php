@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../../public/css/lib/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="../../public/css/lib/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../../public/css/main.css">
+
 </head>
 <body>
 
@@ -33,6 +34,7 @@
     require('..\..\view\Nav_Inicio\nav.php')
     ?> 
     </div>
+
 
     <div class="page-center">
         
@@ -49,7 +51,7 @@
                     </div>
                     <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
 
-                    <!-- TODO: validar segun valor al iniciar session -->
+                     TODO: validar segun valor al iniciar session -->
                     <?php
                         if (isset($_GET["m"])){
                             switch($_GET["m"]){
