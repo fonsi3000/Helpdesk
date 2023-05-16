@@ -35,14 +35,13 @@
     ?> 
     </div>
 
-
     <div class="page-center">
         
         <div class="page-center-in">
             
             <div class="container-fluid">
 
-                <form class="sign-box" action="" method="post" id="login_form">
+                <form class="sign-box" action="" method="post" id="login_form" style="margin-bottom: 190px;">
 
                     <input type="hidden" id="rol_id" name="rol_id" value="1">
 
@@ -51,7 +50,7 @@
                     </div>
                     <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
 
-                     TODO: validar segun valor al iniciar session -->
+                    <!-- TODO: validar segun valor al iniciar session -->
                     <?php
                         if (isset($_GET["m"])){
                             switch($_GET["m"]){
@@ -98,6 +97,7 @@
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
+                    <b>Aun no te has registrado? <a href="..\Registro_usuario\index.php">Registrate</a></b>
                 </form>
             </div>
         </div>
