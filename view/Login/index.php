@@ -48,7 +48,7 @@
                     <div class="sign-avatar">
                         <img src="../../public/1.jpg" alt="" id="imgtipo">
                     </div>
-                    <header class="sign-title" id="lbltitulo">Acceso Usuario</header>
+                    <header class="sign-title" id="lbltitulo" style="font-size: 20px ">Acceso Usuario</header>
 
                     <!-- TODO: validar segun valor al iniciar session -->
                     <?php
@@ -87,17 +87,17 @@
                     <div class="form-group">
                         <input type="password" id="usu_pass" name="usu_pass" class="form-control" placeholder="Password"/>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" >
                         <div class="float-right reset">
-                            <a href="reset-password.html">Cambiar Contraseña</a>
+                            <a href="reset-password.html" style="font-size: 13px ">Cambiar Contraseña</a>
                         </div>
                         <div class="float-left reset">
-                            <a href="#" id="btnsoporte">Acceso Soporte</a>
+                            <a href="#" id="btnsoporte" style="font-size: 13px ">Acceso Soporte</a>
                         </div>
                     </div>
                     <input type="hidden" name="enviar" class="form-control" value="si">
                     <button type="submit" class="btn btn-rounded">Acceder</button>
-                    <b>Aun no te has registrado? <a href="..\Registro_usuario\index.php">Registrate</a></b>
+                    <b>Aun no te has registrado? <a href="..\Registro_usuario\index.php"style="font-size:13px">Registrate</a></b>
                 </form>
             </div>
         </div>

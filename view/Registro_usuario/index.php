@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html>
+<head lang="es">
 	<meta charset="UTF-8">
-	<title></title> 
-	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
-	<link rel="stylesheet" href="..\..\public\estilos.css">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>login</title>
 
-</head>  
+	<link href="img/favicon.144x144.png" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.114x114.png" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.72x72.png" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.57x57.png" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.png" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+
+    <link rel="stylesheet" href="../../public/css/separate/pages/login.min.css">
+    <link rel="stylesheet" href="../../public/css/lib/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/main.css">
+
+</head>
 <body>
 
-<div>
- <form class="formulario">
-    
-    <h1>Registrate</h1>
-     <div class="contenedor">
-     
-     <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre">
-         
-         </div>
+    <div>
+    <?php
+    require('..\..\view\Nav_Inicio\nav.php')
+    ?> 
+    </div>
 
-         <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Apellido">
-         
-         </div>
+    <div style="margin-bottom: 100px;"></div>
 
-         <div class="input-contenedor">
-         <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Numero">
-         
-         </div>
-         
-         <div class="input-contenedor">
-         <i class="fas fa-envelope icon"></i>
-         <input type="text" placeholder="Correo Electronico">
-         
-         </div>
-         
-         <div class="input-contenedor">
-        <i class="fas fa-key icon"></i>
-         <input type="password" placeholder="Contraseña">
-         
-         </div>
-         <input type="submit" value="Registrate" class="button">
-         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-         <p>¿Ya tienes una cuenta?<a class="link" href="../Login/index.php">Iniciar Sesion</a></p>
-     </div>
-    </form>
+    <div class="page-center">
+        
+        <div class="page-center-in">
+            
+            <div class="container-fluid">
+
+                <form class="sign-box" action="" method="get" id="login_form" style="margin-bottom: 190px;">
+
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="usu_correo" name="usu_correo" class="form-control" placeholder="Correo electronico" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="usu_pass" name="usu_pass" class="form-control " placeholder="Contraseña" required/>
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="tel" id="usu_correo" name="usu_correo" class="form-control" placeholder="Tel. Whatsapp"required pattern="[0-9]+" minlength="10" maxlength="10"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-rounded button">Registrar</button>
+                    <b style="font-size:13px">Ya tienes una cuenta? <a href="..\Login\index.php"style="font-size:13px">Iniciar Sesion</a></b>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
